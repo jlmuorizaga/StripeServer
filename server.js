@@ -33,7 +33,7 @@ app.get("/cancel", (req, res) => {
 //let sucursal=window.localStorage.getItem('sucursal');
 //let stripeGateway = stripe('sk_test_51LSBydIjGNO1QnMz4u33zcYR4KGC6zO9x5XvjMd2DksvDMG0JFlY3p3BiYmNnGzpL0AwanqYg9tupyzcWFSIzrbP00AcbupLT4');
 //let stripeGateway = 'sk_test_51LSBydIjGNO1QnMz4u33zcYR4KGC6zO9x5XvjMd2DksvDMG0JFlY3p3BiYmNnGzpL0AwanqYg9tupyzcWFSIzrbP00AcbupLT4';
-let DOMAIN = "http://localhost:3000";
+let DOMAIN = "http://localhost:3002";
 //process.env.DOMAIN;
 
 app.post("/stripe-checkout", async (req, res) => {
@@ -90,5 +90,5 @@ app.post("/stripe-checkout", async (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log("listening on port 3000;");
+  console.log("listening on port 3002;");
 });
